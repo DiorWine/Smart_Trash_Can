@@ -84,7 +84,8 @@ class Client():
                             for cw in j["cw"]:
                                 if cw["wp"] == "n":
                                     answer += cw["w"]
-                    #print "rtasr result: " + str(data)
+                                    print "new line :" + cw["w"]
+                    print "rtasr result: " + str(data)
 
                 if result_dict["action"] == "error":
                     print "rtasr error: " + result
@@ -106,4 +107,6 @@ if __name__ == '__main__':
     else:
         client = Client()
         client.send(sys.argv[1])
+        client.recv()
+        print (client.ANSWER)
 
