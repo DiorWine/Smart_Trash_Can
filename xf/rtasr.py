@@ -95,10 +95,12 @@ class Client():
             print answer
             self.ANSWER = answer.encode('utf-8')
             print "receive result end"
+            print '\033c'
 
     def close(self):
         self.ws.close()
         print "connection closed"
+        print '\033c'
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:

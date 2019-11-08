@@ -9,7 +9,7 @@ class WAVE_Recorder():
     FORMAT = pyaudio.paInt16
     CHANNELS = 1
     RATE = 8000
-    RECORD_SECONDS = 3
+    RECORD_SECONDS = 2
     WAVE_OUTPUT_FILENAME = "output.wav"
     
     FRAMES = []
